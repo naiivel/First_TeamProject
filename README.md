@@ -12,7 +12,9 @@
 <hr/>
 
 ## 주요 기능
-![KakaoTalk_20220904_143829875](https://user-images.githubusercontent.com/98449486/188299192-a3e628bc-4384-453a-a9bb-74dc0c734d12.png)
+
+![KakaoTalk_20220904_164155850_11](https://user-images.githubusercontent.com/98449486/188303016-01e8ce35-4036-447d-80bb-e59d84d00b14.jpg) <br/>
+● 시작페이지 : 로그인 / 비회원 로그인 / 회원가입 기능 구현
 
 
 <hr/>
