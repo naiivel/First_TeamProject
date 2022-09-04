@@ -12,7 +12,7 @@
 <hr/>
 
 ## 주요 기능
-
+![KakaoTalk_20220904_143829875](https://user-images.githubusercontent.com/98449486/188299192-a3e628bc-4384-453a-a9bb-74dc0c734d12.png)
 
 
 <hr/>
