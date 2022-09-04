@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelRoom.HaeundaeGu.RoomController">
+   <children>
+      <ImageView fitHeight="181.0" fitWidth="217.0" layoutX="13.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/HaeundaeGu/Hotel/LavideAtlan/Main.PNG" />
+         </image></ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="291.0" prefHeight="33.0" prefWidth="469.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="방 타입 / 가격 / 주변명소">
+              <items>
+                  <MenuItem fx:id="itemType" mnemonicParsing="false" onAction="#handle" text="방 타입" />
+                <MenuItem fx:id="itemPrice" mnemonicParsing="false" onAction="#handle" text="가격" />
+                <MenuItem fx:id="itemAttraction" mnemonicParsing="false" onAction="#handle" text="주변명소" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+      <Label fx:id="title" layoutX="165.0" layoutY="14.0" text="라비드아틀란호텔">
+         <font>
+            <Font name="HCR Dotum Bold" size="17.0" />
+         </font></Label>
+      <StackPane layoutX="14.0" layoutY="324.0" prefHeight="252.0" prefWidth="469.0">
+         <children>
+            <AnchorPane fx:id="roomType" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/HaeundaeGu/Hotel/LavideAtlan/HalfOceanDeluxeTwin1.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/HaeundaeGu/Hotel/LavideAtlan/OceanFamilyTwin1.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/HaeundaeGu/Hotel/LavideAtlan/Premier1.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="디럭스트윈 하프오션룸(오션뷰/더블사이즈2)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="오션패밀리 룸(오션뷰/더블사이즈1/슈퍼싱글사이즈1)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="프리미어 룸(시티뷰/더블사이즈1)" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="price" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/HaeundaeGu/Hotel/LavideAtlan/HalfOceanDeluxeTwin1.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/HaeundaeGu/Hotel/LavideAtlan/OceanFamilyTwin1.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/HaeundaeGu/Hotel/LavideAtlan/Premier1.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="375,000원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400,500원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="554,000원" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="attraction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/HaeundaeGu/Attraction/TheBay.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="224.0" layoutY="28.0" prefHeight="133.0" prefWidth="229.0">
+                     <children>
+                        <TextArea editable="false" layoutY="2.0" prefHeight="133.0" prefWidth="229.0" text="*더 베이&#10;&#10;부산 해운대를 대표하는 해양레져 &#10;클럽하우스.&#10;&#10;화려한 야경과 맛있는 음식을 &#10;즐기는 최고의 휴양지">
+                           <font>
+                              <Font size="13.0" />
+                           </font></TextArea>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="176.0" prefHeight="62.0" prefWidth="439.0">
+                     <children>
+                        <TextField editable="false" layoutY="20.0" prefHeight="23.0" prefWidth="439.0" text="부산 해운대구 동백로 52" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Button layoutX="113.0" layoutY="638.0" mnemonicParsing="false" text="확인" />
+      <Button fx:id="btnback" layoutX="326.0" layoutY="638.0" mnemonicParsing="false" text="뒤로가기" />
+      <HBox alignment="CENTER_LEFT" layoutX="236.0" layoutY="65.0" prefHeight="174.0" prefWidth="245.0" style="-fx-border-color: black;">
+         <children>
+            <TextArea editable="false" prefHeight="164.0" prefWidth="241.0" text="부산 해운대구 구남로37&#10;&#10;*4성급 호텔&#10;&#10;특별하고 유연한 고품격서비스 호텔&#10;&#10;해운대 해수욕장 바로 앞에 위치하고 &#10;있어 객실에서 바다뷰와 해운대전경을 &#10;감상 하실 수 있습니다.">
+               <font>
+                  <Font size="13.0" />
+               </font></TextArea>
+         </children>
+      </HBox>
+      <Separator layoutX="14.0" layoutY="45.0" prefHeight="3.0" prefWidth="469.0" />
+      <Separator layoutX="14.0" layoutY="278.0" prefHeight="3.0" prefWidth="469.0" />
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="588.0" prefHeight="33.0" prefWidth="469.0" spacing="10.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="예약하실 방을 선택해주세요.">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#change" text="디럭스트윈하프오션" />
+                <MenuItem mnemonicParsing="false" onAction="#change" text="오션패밀리" />
+                  <MenuItem mnemonicParsing="false" onAction="#change" text="프리미어" />
+              </items>
+            </MenuButton>
+            <Label fx:id="choice" text="선택된 룸">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

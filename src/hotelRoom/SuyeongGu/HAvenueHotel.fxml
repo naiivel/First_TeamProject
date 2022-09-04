@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelRoom.SuyeongGu.RoomController">
+   <children>
+      <ImageView fitHeight="174.0" fitWidth="213.0" layoutX="14.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/SuyeongGu/Hotel/H_Avenue/Main.PNG" />
+         </image></ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="291.0" prefHeight="33.0" prefWidth="469.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="방 타입 / 가격 / 주변명소">
+              <items>
+                  <MenuItem fx:id="itemType" mnemonicParsing="false" onAction="#handle" text="방 타입" />
+                <MenuItem fx:id="itemPrice" mnemonicParsing="false" onAction="#handle" text="가격" />
+                <MenuItem fx:id="itemAttraction" mnemonicParsing="false" onAction="#handle" text="주변명소" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+      <Label fx:id="title" layoutX="186.0" layoutY="14.0" text="에이치에비뉴호텔">
+         <font>
+            <Font name="HCR Dotum Bold" size="17.0" />
+         </font></Label>
+      <StackPane layoutX="14.0" layoutY="324.0" prefHeight="252.0" prefWidth="469.0">
+         <children>
+            <AnchorPane fx:id="roomType" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SuyeongGu/Hotel/H_Avenue/FirstLoopTopFloor1.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SuyeongGu/Hotel/H_Avenue/FirstOceanBridge.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SuyeongGu/Hotel/H_Avenue/ThirdOceanBeachView1.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="루프탑 룸(오션뷰/더블사이즈1)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="오션브릿지 룸(오션뷰/더블사이즈1)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="오션비치 룸(오션뷰/퀸사이즈1)" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="price" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SuyeongGu/Hotel/H_Avenue/FirstLoopTopFloor1.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SuyeongGu/Hotel/H_Avenue/FirstOceanBridge.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SuyeongGu/Hotel/H_Avenue/ThirdOceanBeachView1.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200,000원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300,000원" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="attraction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SuyeongGu/Attraction/GwanganBridge.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="224.0" layoutY="37.0" prefHeight="116.0" prefWidth="229.0">
+                     <children>
+                        <TextArea layoutY="2.0" prefHeight="113.0" prefWidth="229.0" text="총 연장 7.4km인 광안대로는 남천동 &#10;49호 광장에서 센텀시티 부근을 잇는&#10;국내 최대의 해상교량입니다.&#10;특히 요일별, 계절별로 다양한 색상의&#10;조명시스템이 연출되어 아름다운 &#10;광안대교 야경을 볼 수 있습니다." />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="176.0" prefHeight="62.0" prefWidth="439.0">
+                     <children>
+                        <TextField layoutX="6.0" layoutY="20.0" prefHeight="23.0" prefWidth="439.0" text="부산광역시 수영구 광안해변로219" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Button fx:id="btncon" layoutX="113.0" layoutY="638.0" mnemonicParsing="false" text="확인" />
+      <Button fx:id="btnback" layoutX="326.0" layoutY="638.0" mnemonicParsing="false" text="뒤로가기" />
+      <HBox alignment="CENTER_LEFT" layoutX="236.0" layoutY="66.0" prefHeight="170.0" prefWidth="245.0" style="-fx-border-color: black;">
+         <children>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="242.0" text="부산광역시 수영구 민락수변로 29&#10;&#10;*3성급호텔&#10;&#10;젊고 감각적인 공간과 분위기&#10;&#10;차별화된 문화를 선도하는 호텔이며&#10;합리적인 서비스로 게스트가 가장 필요로&#10;하는 것에 집중하여 최고의 휴식과 경험을&#10;선사합니다.&#10;&#10;" />
+         </children>
+      </HBox>
+      <Separator layoutX="14.0" layoutY="45.0" prefHeight="3.0" prefWidth="469.0" />
+      <Separator layoutX="13.0" layoutY="266.0" prefHeight="3.0" prefWidth="469.0" />
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="588.0" prefHeight="33.0" prefWidth="469.0" spacing="10.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="예약하실 방을 선택해주세요.">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#change" text="루프탑" />
+                <MenuItem mnemonicParsing="false" onAction="#change" text="오션브릿지" />
+                  <MenuItem mnemonicParsing="false" onAction="#change" text="오션비치" />
+              </items>
+            </MenuButton>
+            <Label fx:id="choice" text="선택된 룸">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelRoom.SeoGu.RoomController">
+   <children>
+      <ImageView fitHeight="171.0" fitWidth="209.0" layoutX="27.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/SeoGu/Hotels/PineHill/Main.PNG" />
+         </image></ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="291.0" prefHeight="33.0" prefWidth="469.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="방 타입 / 가격 / 주변명소">
+              <items>
+                  <MenuItem fx:id="itemType" mnemonicParsing="false" onAction="#handle" text="방 타입" />
+                <MenuItem fx:id="itemPrice" mnemonicParsing="false" onAction="#handle" text="가격" />
+                <MenuItem fx:id="itemAttraction" mnemonicParsing="false" onAction="#handle" text="주변명소" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+      <Label fx:id="title" layoutX="192.0" layoutY="14.0" text="파인힐호텔">
+         <font>
+            <Font name="HCR Dotum Bold" size="17.0" />
+         </font></Label>
+      <StackPane layoutX="14.0" layoutY="324.0" prefHeight="252.0" prefWidth="469.0">
+         <children>
+            <AnchorPane fx:id="roomType" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SeoGu/Hotels/PineHill/pdeluxe.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SeoGu/Hotels/PineHill/pstandard.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SeoGu/Hotels/PineHill/VIP1.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="프리미엄디럭스 룸(시티뷰/더블사이즈1)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="프리미엄스탠다드 룸(시티뷰/더블사이즈1)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIP 룸(시티뷰/퀸사이즈1)" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="price" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SeoGu/Hotels/PineHill/pdeluxe.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SeoGu/Hotels/PineHill/pstandard.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SeoGu/Hotels/PineHill/VIP1.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120,000원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="140,000원" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="attraction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/SeoGu/Attraction/songdobeach.PNG" />
+                     </image></ImageView>
+                  <Pane layoutX="224.0" layoutY="20.0" prefHeight="150.0" prefWidth="229.0">
+                     <children>
+                        <TextArea editable="false" layoutY="-4.0" prefHeight="158.0" prefWidth="229.0" text="*송도해수욕장&#10;&#10;100년의 역사와 천혜의 자연환경을&#10;품고있는 송도해수욕장의 중심에&#10;송도바다의 에메랄드 빛 바다와&#10;반짝이는 야경이 파노라마 처럼&#10;펼쳐집니다." />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="176.0" prefHeight="62.0" prefWidth="439.0">
+                     <children>
+                        <TextField editable="false" layoutY="14.0" prefHeight="23.0" prefWidth="439.0" text="부산광역시 서구 암남동 129-32번지" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Button fx:id="btncon" layoutX="113.0" layoutY="638.0" mnemonicParsing="false" text="확인" />
+      <Button fx:id="btnback" layoutX="326.0" layoutY="638.0" mnemonicParsing="false" text="뒤로가기" />
+      <HBox alignment="CENTER_LEFT" layoutX="234.0" layoutY="69.0" prefHeight="171.0" prefWidth="245.0" style="-fx-border-color: black;">
+         <children>
+            <TextArea editable="false" prefHeight="228.0" prefWidth="242.0" text="부산광역시 서구 암남공원로 249&#10;&#10;*2성급호텔&#10;&#10;오션뷰와 함께 포근하고 따뜻한 온기가&#10;있는 부산 송도의 호텔&#10;&#10;저희는 언제나 고객님들의 포근하고&#10;편안한 휴식을 위해 다양한 고품질의&#10;서비스를 제공하고 있습니다.">
+               <font>
+                  <Font size="13.0" />
+               </font></TextArea>
+         </children>
+      </HBox>
+      <Separator layoutX="14.0" layoutY="47.0" prefHeight="3.0" prefWidth="469.0" />
+      <Separator layoutX="14.0" layoutY="266.0" prefHeight="3.0" prefWidth="469.0" />
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="588.0" prefHeight="33.0" prefWidth="469.0" spacing="10.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="예약하실 방을 선택해주세요.">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#change" text="프리미엄디럭스" />
+                <MenuItem mnemonicParsing="false" onAction="#change" text="프리미엄스탠다드" />
+                  <MenuItem mnemonicParsing="false" onAction="#change" text="VIP" />
+              </items>
+            </MenuButton>
+            <Label fx:id="choice" text="선택된 룸">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

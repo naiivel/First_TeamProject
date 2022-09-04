@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelList.HaeundaeGuController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="101.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/signImg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="279.0" layoutY="70.0" prefHeight="23.0" prefWidth="121.0" text="해운대구 호텔">
+         <font>
+            <Font name="HCR Dotum Bold" size="17.0" />
+         </font></Label>
+      <Separator layoutX="17.0" layoutY="113.0" prefHeight="15.0" prefWidth="467.0" />
+      <CheckBox fx:id="cb1" layoutX="28.0" layoutY="209.0" mnemonicParsing="false" />
+      <CheckBox fx:id="cb2" layoutX="28.0" layoutY="380.0" mnemonicParsing="false" />
+      <CheckBox fx:id="cb3" layoutX="28.0" layoutY="547.0" mnemonicParsing="false" />
+      <ImageView fx:id="GLhotel" fitHeight="130.0" fitWidth="155.0" layoutX="77.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HaeundaeGu/Hotel/GrandLct/Main.PNG" />
+         </image></ImageView>
+      <ImageView fx:id="LAhotel" fitHeight="130.0" fitWidth="155.0" layoutX="78.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HaeundaeGu/Hotel/LavideAtlan/Main.PNG" />
+         </image></ImageView>
+      <ImageView fx:id="PHhotel" fitHeight="130.0" fitWidth="155.0" layoutX="78.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HaeundaeGu/Hotel/ParkHyatt/Main.PNG" />
+         </image></ImageView>
+      <Button fx:id="btncon" layoutX="120.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="확 인" />
+      <Button fx:id="btnback" layoutX="325.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="뒤로가기" />
+      <Pane layoutX="275.0" layoutY="68.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Text layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="해운대 그랜드엘씨티 호텔">
+               <font>
+                  <Font name="MDotum" size="14.0" />
+               </font></Text>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="63.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="82.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="100.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="275.0" layoutY="259.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="22.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="라비드아틀란 호텔">
+               <font>
+                  <Font name="MDotum" size="14.0" />
+               </font></Text>
+            <Separator layoutX="21.0" layoutY="142.0" prefHeight="4.0" prefWidth="119.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="44.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="100.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="81.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="63.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="294.0" layoutY="431.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="8.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="파크하얏트 호텔">
+               <font>
+                  <Font name="MDotum" size="14.0" />
+               </font></Text>
+            <Separator layoutX="8.0" layoutY="136.0" prefHeight="4.0" prefWidth="105.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="42.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="78.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="60.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="26.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/star.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Separator layoutX="17.0" layoutY="630.0" prefHeight="15.0" prefWidth="467.0" />
+      <Separator layoutX="17.0" layoutY="464.0" prefHeight="15.0" prefWidth="467.0" />
+      <Separator layoutX="17.0" layoutY="295.0" prefHeight="15.0" prefWidth="467.0" />
+      <Separator layoutX="274.0" layoutY="236.0" prefHeight="4.0" prefWidth="168.0" />
+   </children>
+</AnchorPane>

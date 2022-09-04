@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" stylesheets="@confirm.css"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="confirm.ConfirmController">
+	<children>
+		<TextArea editable="false" layoutX="37.0" layoutY="39.0" prefHeight="528.0" prefWidth="427.0" />
+		<Button fx:id="btn1" layoutX="108.0" layoutY="616.0" prefHeight="36.0" prefWidth="71.0" text="확인" />
+		<Button fx:id="btn2" layoutX="320.0" layoutY="616.0" prefHeight="36.0" prefWidth="71.0" text="취소" />
+		<Label layoutX="142.0" layoutY="157.0" prefHeight="16.0" text="예약번호" textFill="#807171">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="142.0" layoutY="202.0" text="이름" textFill="#433e3e">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="142.0" layoutY="247.0" text="연락처" textFill="#433e3e">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="142.0" layoutY="292.0" text="예약날짜" textFill="#433e3e">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="142.0" layoutY="337.0" text="호텔명" textFill="#433e3e">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="142.0" layoutY="382.0" text="객실명" textFill="#433e3e">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="142.0" layoutY="427.0" text="가격" textFill="#433e3e">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<TextField fx:id="number" editable="false" layoutX="212.0"
+			layoutY="157.0" prefHeight="18.0" prefWidth="147.0" />
+		<TextField fx:id="name" editable="false" layoutX="212.0"
+			layoutY="202.0" prefHeight="18.0" prefWidth="147.0" />
+		<TextField fx:id="phone" editable="false" layoutX="212.0"
+			layoutY="247.0" prefHeight="23.0" prefWidth="147.0" />
+		<TextField fx:id="date" editable="false" layoutX="212.0"
+			layoutY="292.0" prefHeight="23.0" prefWidth="147.0" />
+		<TextField fx:id="hotel" editable="false" layoutX="212.0"
+			layoutY="337.0" prefHeight="23.0" prefWidth="147.0" />
+		<TextField fx:id="room" editable="false" layoutX="212.0"
+			layoutY="382.0" prefHeight="23.0" prefWidth="147.0" />
+		<TextField fx:id="cost" editable="false" layoutX="212.0"
+			layoutY="427.0" prefHeight="23.0" prefWidth="147.0" />
+		<TextField alignment="CENTER" disable="true" layoutX="87.0"
+			layoutY="498.0" opacity="0.9" prefHeight="23.0" prefWidth="328.0"
+			text="확인을 누르시면 위 정보로 예약이 확정됩니다.">
+
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+		</TextField>
+
+		<ImageView fitHeight="67.0" fitWidth="170.0" layoutX="142.0"
+			layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/signImg.jpg" />
+			</image>
+		</ImageView>
+		<Label alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="80.0" prefHeight="36.0" prefWidth="128.0"
+			text="예약 정보" textFill="#5e5858">
+			<font>
+				<Font name="HYHeadLine-Medium" size="14.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

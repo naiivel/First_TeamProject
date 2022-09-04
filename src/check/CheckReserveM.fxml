@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" stylesheets="@checkRev.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="check.CheckReserveMController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="395.0" layoutX="62.0" layoutY="253.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/view.jpg" />
+         </image>
+      </ImageView>
+    
+      <TextArea disable="true" editable="false" layoutX="59.0" layoutY="158.0" prefHeight="410.0" prefWidth="400.0" style="-fx-background-color: white; -fx-border-color: black;">
+      </TextArea>
+      
+      <Label alignment="CENTER" layoutX="144.0" layoutY="273.0" style="-fx-font-weight: bold;" styleClass=".Label" text="예약번호" textFill="#fcfcfc">
+         <font>
+            <Font name="HCR Dotum Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="144.0" layoutY="307.0" style="-fx-font-weight: bold;" styleClass=".Label" text="이름" textFill="#fcfcfc">
+         <font>
+            <Font name="HCR Dotum Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="144.0" layoutY="339.0" style="-fx-font-weight: bold;" styleClass=".Label" text="연락처" textFill="#fcfcfc">
+         <font>
+            <Font name="HCR Dotum Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="144.0" layoutY="371.0" style="-fx-font-weight: bold;" styleClass=".Label" text="예약날짜" textFill="#fcfcfc">
+         <font>
+            <Font name="HCR Dotum Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="144.0" layoutY="402.0" style="-fx-font-weight: bold;" styleClass=".Label" text="호텔명" textFill="#fcfcfc">
+         <font>
+            <Font name="HCR Dotum Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="144.0" layoutY="433.0" style="-fx-font-weight: bold;" styleClass=".Label" text="객실명" textFill="#fcfcfc">
+         <font>
+            <Font name="HCR Dotum Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="205.0" prefHeight="36.0" prefWidth="210.0" styleClass=".Label" text="고객님의 예약 정보입니다.">
+         <font>
+            <Font name="HCR Dotum" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mrvNumber" editable="false" layoutX="200.0" layoutY="269.0" prefHeight="15.0" prefWidth="177.0"/>
+      <TextField fx:id="mrvName" editable="false" layoutX="200.0" layoutY="301.0" prefHeight="23.0" prefWidth="177.0" />
+      <TextField fx:id="mrvPhone" editable="false" layoutX="200.0" layoutY="333.0" prefHeight="23.0" prefWidth="177.0" />
+      <TextField fx:id="mrvDate" editable="false" layoutX="200.0" layoutY="365.0" prefHeight="23.0" prefWidth="177.0" />
+      <TextField fx:id="mrvHotel" editable="false" layoutX="200.0" layoutY="396.0" prefHeight="23.0" prefWidth="177.0" />
+      <TextField fx:id="mrvRoom" editable="false" layoutX="200.0" layoutY="427.0" prefHeight="23.0" prefWidth="177.0" />
+   
+      <Button fx:id="btnMain" layoutX="394.0" layoutY="583.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="64.0" text="메인으로" />
+      <Label fx:id="lblName" layoutX="87.0" layoutY="177.0" prefHeight="36.0" prefWidth="216.0" text="Label">
+         <font>
+            <Font name="HCR Dotum" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="60.0" layoutY="247.0" prefHeight="6.0" prefWidth="400.0" />
+      <ImageView fitHeight="75.0" fitWidth="340.0" layoutX="285.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/signImg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="517.0" text="** 체크인 하루 전에 예약 취소시 위약금이 발생할수 있습니다. " textFill="#d33c76" />
+      <Separator layoutX="60.0" layoutY="479.0" prefHeight="6.0" prefWidth="400.0" />
+      <Button fx:id="btnCancel" layoutX="354.0" layoutY="537.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="71.0" text="예약취소">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="203.0" layoutY="540.0" text="예약을 취소하시겠습니까?" textFill="#da3535" />
+     
+   </children>
+</AnchorPane>
