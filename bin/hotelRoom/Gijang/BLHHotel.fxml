@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelRoom.Gijang.RoomController">
+   <children>
+      <ImageView fitHeight="160.0" fitWidth="213.0" layoutX="14.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Gijang/Hotels/BestLouisHamilton/Main.PNG" />
+         </image></ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="291.0" prefHeight="33.0" prefWidth="469.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="방 타입 / 가격 / 주변명소">
+              <items>
+                  <MenuItem fx:id="itemType" mnemonicParsing="false" onAction="#handle" text="방 타입" />
+                <MenuItem fx:id="itemPrice" mnemonicParsing="false" onAction="#handle" text="가격" />
+                <MenuItem fx:id="itemAttraction" mnemonicParsing="false" onAction="#handle" text="주변명소" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+      <Label fx:id="title" layoutX="143.0" layoutY="24.0" text="베스트루이스해밀턴호텔기장">
+         <font>
+            <Font name="HCR Dotum Bold" size="17.0" />
+         </font></Label>
+      <StackPane layoutX="14.0" layoutY="324.0" prefHeight="252.0" prefWidth="469.0">
+         <children>
+            <AnchorPane fx:id="roomType" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Gijang/Hotels/BestLouisHamilton/Caramella.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Gijang/Hotels/BestLouisHamilton/Carino.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Gijang/Hotels/BestLouisHamilton/Hinoki.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="카라멜라 룸(오션뷰/퀸사이즈1)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="카리노 룸(오션뷰/더블사이즈2)" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="히노키 룸(오션뷰/퀸사이즈1/더블사이즈1)" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="price" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Gijang/Hotels/BestLouisHamilton/Caramella.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Gijang/Hotels/BestLouisHamilton/Carino.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" layoutX="10.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Gijang/Hotels/BestLouisHamilton/Hinoki.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="250,000원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="91.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="350,000원" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="167.0" prefHeight="70.0" prefWidth="300.0">
+                     <children>
+                        <Text layoutX="1.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="450,000원" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane fx:id="attraction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="141.0" fitWidth="212.0" layoutX="13.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Gijang/Attraction/ilgwang.jpg" />
+                     </image></ImageView>
+                  <Pane layoutX="226.0" layoutY="28.0" prefHeight="133.0" prefWidth="225.0">
+                     <children>
+                        <TextArea editable="false" layoutX="6.0" prefHeight="141.0" prefWidth="222.0" text="&#10;*일광해수욕장&#10;&#10;수심이 얕고 해안선이 강송정에서&#10;학리 어구까지 원을 이루며 펼쳐져&#10;있어 해변이 한눈에 들어온다.">
+                        <font>
+                  		<Font size="13.0" />
+               			</font></TextArea>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="176.0" prefHeight="62.0" prefWidth="439.0">
+                     <children>
+                        <TextField editable="false" layoutX="7.0" layoutY="20.0" prefHeight="23.0" prefWidth="433.0" text="부산 기장군 일광면 삼성리" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <Button fx:id="btncon" layoutX="113.0" layoutY="638.0" mnemonicParsing="false" text="확인" />
+      <Button fx:id="btnback" layoutX="326.0" layoutY="638.0" mnemonicParsing="false" text="뒤로가기" />
+      <HBox alignment="CENTER_LEFT" layoutX="236.0" layoutY="84.0" prefHeight="154.0" prefWidth="245.0" style="-fx-border-color: black;">
+         <children>
+            <TextArea prefHeight="228.0" prefWidth="242.0" text="부산 기장군 기장읍 반송로1545&#10;*3성급 호텔&#10;&#10;현대적 디자인과 럭셔리한 감각의&#10;부티크 호텔&#10;&#10;스타일과 편의를 모두 추구하는 &#10;비즈니스맨들을 위한 특별하고 &#10;프라이빗한 공간을 추구하는 &#10;맞춤형호텔입니다.&#10;">
+               <font>
+                  <Font size="13.0" />
+               </font></TextArea>
+         </children>
+      </HBox>
+      <Separator layoutX="14.0" layoutY="57.0" prefHeight="3.0" prefWidth="469.0" />
+      <Separator layoutX="14.0" layoutY="267.0" prefHeight="3.0" prefWidth="469.0" />
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="588.0" prefHeight="33.0" prefWidth="469.0" spacing="10.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="예약하실 방을 선택해주세요.">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#change" text="카라멜라" />
+                <MenuItem mnemonicParsing="false" onAction="#change" text="카리노" />
+                  <MenuItem mnemonicParsing="false" onAction="#change" text="히노키" />
+              </items>
+            </MenuButton>
+            <Label fx:id="choice" text="선택된 룸">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
