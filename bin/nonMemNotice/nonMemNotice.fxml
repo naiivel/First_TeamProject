@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nonMemNotice.nonMemNoticeController">
+   <children>
+      <ImageView fitHeight="436.0" fitWidth="458.0" layoutX="21.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nonMemNotice.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="74.0" layoutY="479.0" prefHeight="23.0" prefWidth="28.0" text="이름" textFill="#362e2e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldName" layoutX="121.0" layoutY="479.0" prefHeight="18.0" prefWidth="304.0" />
+      <Label layoutX="74.0" layoutY="514.0" prefHeight="23.0" prefWidth="42.0" text="연락처" textFill="#362e2e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldPhone" layoutX="121.0" layoutY="515.0" prefHeight="23.0" prefWidth="304.0" promptText="하이픈(-) 없이 입력해주세요." />
+      <Button fx:id="buttonConfirm" layoutX="340.0" layoutY="568.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="85.0" text="다음으로" textFill="#433e3e" />
+      <Button fx:id="buttonCancel" layoutX="250.0" layoutY="568.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="85.0" text="이전으로" textFill="#433e3e" />
+   </children>
+</AnchorPane>

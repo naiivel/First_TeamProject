@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.loginController">
+   <children>
+      <Label alignment="CENTER" layoutX="55.0" layoutY="40.0" prefHeight="50.0" prefWidth="400.0" text="Welcome" textAlignment="JUSTIFY" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3047619047619048" startY="0.4095238095238095">
+               <stops>
+                  <Stop color="#d11b1b" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="250.0" fitWidth="400.0" layoutX="55.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="123.0" layoutY="463.0" text="ID" textFill="#a49f9f" />
+      <Label layoutX="120.0" layoutY="497.0" text="PW" textFill="#a49f9f" />
+      <TextField fx:id="textFieldID" layoutX="147.0" layoutY="458.0" prefHeight="23.0" prefWidth="182.0" />
+      <PasswordField fx:id="textFieldPw" layoutX="147.0" layoutY="492.0" prefHeight="23.0" prefWidth="182.0" />
+      <Button fx:id="loginButton" layoutX="342.0" layoutY="457.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="54.0" text="로그인" />
+      <Button fx:id="regiButton" layoutX="305.0" layoutY="562.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="90.0" text="회원가입" />
+      <Button fx:id="nonMemRegiButton" layoutX="305.0" layoutY="602.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="90.0" text="비회원로그인" />
+      <Label layoutX="103.0" layoutY="345.0" prefHeight="50.0" prefWidth="308.0" text="부산 호텔숙박 예약프로그램 &quot;Dynamic Hotels&quot; 입니다." />
+      <Label layoutX="138.0" layoutY="388.0" prefHeight="15.0" prefWidth="239.0" text="즐겁고 행복한 여행이 되시길 바라겠습니다 " textAlignment="JUSTIFY" />
+      <Separator layoutX="55.0" layoutY="542.0" prefHeight="15.0" prefWidth="400.0" />
+      <Label layoutX="121.0" layoutY="563.0" prefHeight="23.0" prefWidth="186.0" text="회원가입을 진행하시겠습니까?">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="606.0" text="비회원으로 예약을 진행합니다.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
