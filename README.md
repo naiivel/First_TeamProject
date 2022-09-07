@@ -14,43 +14,43 @@
 ## 주요 기능
 
 ![KakaoTalk_20220904_164155850_11](https://user-images.githubusercontent.com/98449486/188303016-01e8ce35-4036-447d-80bb-e59d84d00b14.jpg) <br/>
-### ● 시작페이지 : 로그인 / 비회원 로그인 / 회원가입
+#### ● 시작페이지 : 로그인 / 비회원 로그인 / 회원가입
 <br/>
 
 ![KakaoTalk_20220904_164155850_10](https://user-images.githubusercontent.com/98449486/188303096-e05448f9-9fb0-4898-9b67-44139ac62896.jpg) <br/>
-### ● 회원가입 페이지 : 실시간 비밀번호 일치 확인 기능
+#### ● 회원가입 페이지 : 실시간 비밀번호 일치 확인 기능
 <br/>
 
 ![KakaoTalk_20220904_164155850_09](https://user-images.githubusercontent.com/98449486/188303159-e8401fef-0471-4e10-81e4-f0895d73cd17.jpg) <br/>
-### ● 로그인 또는 비회원 로그인 후 메인화면 : 예약하기 / 예약내역 확인 기능
+#### ● 로그인 또는 비회원 로그인 후 메인화면 : 예약하기 / 예약내역 확인 기능
 <br/>
 
 ![KakaoTalk_20220904_164155850_06](https://user-images.githubusercontent.com/98449486/188303182-c52c9ab8-edef-4f58-bd10-4e63a25c67a7.jpg) <br/>
-### ● 예약하기 : 날짜 선택 / 지역 선택 기능
+#### ● 예약하기 : 날짜 선택 / 지역 선택 기능
 <br/>
 
 ![KakaoTalk_20220904_164155850_05](https://user-images.githubusercontent.com/98449486/188303201-ae7557c3-c5d1-4022-acbb-24e992801181.jpg) <br/>
-### ● 예약하기 : 숙소 선택 / 룸 선택 기능
+#### ● 예약하기 : 숙소 선택 / 룸 선택 기능
 <br/>
 
 ![KakaoTalk_20220904_164155850_04](https://user-images.githubusercontent.com/98449486/188303231-beffb77b-b9f5-4dfd-b4b5-e45623b9aa67.jpg) <br/>
-### ● 예약확정 : 선택항목이 내용 확인 후 예약확정 or 취소 
+#### ● 예약확정 : 선택항목이 내용 확인 후 예약확정 or 취소 
 <br/>
 
 ![KakaoTalk_20220904_164155850_01](https://user-images.githubusercontent.com/98449486/188303277-c936d623-911a-43af-b314-59f5b6df86d5.jpg) <br/>
-### ● 예약내역 확인 : 데이터베이스에 저장되어있는 예약내역을 출력
+#### ● 예약내역 확인 : 데이터베이스에 저장되어있는 예약내역을 출력
 <br/>
 
 ![KakaoTalk_20220904_164155850](https://user-images.githubusercontent.com/98449486/188303315-fcc0feae-c3b3-4897-a9cc-1af3a6cdfea8.jpg) <br/>
-### ● 비회원 예약하기 : 로그인된 회원과 상이한 페이지
+#### ● 비회원 예약하기 : 로그인된 회원과 상이한 페이지
 <br/>
 
 ![KakaoTalk_20220904_164155850_01](https://user-images.githubusercontent.com/98449486/188303350-673ebb71-ce75-49b6-9b85-d18bf79faa3f.jpg) <br/>
-### ● 최종 예약내역
+#### ● 최종 예약내역
 <br/>
 
 ![KakaoTalk_20220904_164155850_08](https://user-images.githubusercontent.com/98449486/188303405-7f4e7e72-1f6f-433e-bfac-ed007d847a1e.jpg) <br/>
-### ● 고객 <-> 상담원 채팅상담
+#### ● 고객 <-> 상담원 채팅상담
 <hr/>
 
 ## 아쉬운 점
